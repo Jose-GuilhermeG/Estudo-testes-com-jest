@@ -11,7 +11,7 @@
     "target": "es2019",
     "types": [],
     // For nodejs:
-    "lib": ["ESNext"],
+    "lib": ["ESNext" , "DOM"],
     // "types": ["node"],
     // and npm install -D @types/node
 
@@ -35,7 +35,7 @@
     // Recommended Options
     "strict": true,
     "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
+    "verbatimModuleSyntax": false,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
@@ -44,6 +44,8 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "forceConsistentCasingInFileNames": true,
-    //"moduleResolution": "node16",
-  }
+  },
+  "include": [
+    "./src/"
+  ]
 }
